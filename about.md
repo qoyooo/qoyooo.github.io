@@ -3,6 +3,6 @@ layout: page
 title: About
 ---
 
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
+**硅基码农** 一个长期从事芯片及嵌入式软件开发与架构设计的码农。一个对3D软件开发非常感兴趣的码农。
 
-For more information about Not Pure Poole, please browse the [README](https://github.com/vszhub/not-pure-poole) file.
+本博客基于Jekyll的Not Pure Pool模板修改，详细信息参见[README](https://github.com/vszhub/not-pure-poole) file.
