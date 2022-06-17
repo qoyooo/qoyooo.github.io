@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ImSequencer集成
+author: qoyooo
 tags: [3D, imgui, ImGuizmo, ImSequencer]
-math: true
 date: 2022-06-17 23:36 +0800
 ---
 # ImSequencer集成
