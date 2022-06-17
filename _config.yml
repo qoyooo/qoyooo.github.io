@@ -1,6 +1,6 @@
 # Setup
 title: 硅基码农
-description: 一个长期从事芯片及其软件开发的码农。一个喜欢上3D编程的嵌入式软件架构师。
+description: 一个长期从事芯片及嵌入式软件开发与架构设计的码农。一个对3D软件开发非常感兴趣的码农。
 url: https://qoyooo.github.io
 avatar: /avatar.jpeg
 paginate: 5
@@ -29,14 +29,14 @@ exclude:
 
 # Optimize Jekyl SEO Tag
 twitter:
-  username: vszhub
+  username: qoyooo
   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: qoyooo
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://twitter.com/qoyooo
+    - https://github.com/qoyooo
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: qoyooo
+  url: https://github.com/qoyooo/
+  email: qoyooo@gmail.com
