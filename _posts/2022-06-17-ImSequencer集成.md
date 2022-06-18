@@ -6,9 +6,8 @@ tags: [3D, imgui, ImGuizmo, ImSequencer]
 date: 2022-06-17 23:36 +0800
 ---
 ImSequencer是基于Dear Imgui的技术的即时模式时间线控件，用于绘制动画的时间线(Timeline)。
-![Timeline](https://github.com/qoyooo/qoyooo.github.io/raw/main/_posts/images/ImSequencer.png)
 
-{: .message }
+![Timeline](https://github.com/qoyooo/qoyooo.github.io/raw/main/_posts/images/ImSequencer.png)
 
 1. 定义SequenceInterface的子类MySequence，该子类用于获取时间线的信息 
    SequenceInterface子类的成员说明如下：
