@@ -6,7 +6,7 @@ tags: [3D, imgui, ImGuizmo, ImSequencer]
 date: 2022-06-17 23:36 +0800
 ---
 ImSequencer是基于Dear Imgui的技术的即时模式时间线控件，用于绘制动画的时间线(Timeline)。
-
+![Timeline](images/ImSequencer.png)
 
 {: .message }
 
