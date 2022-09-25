@@ -48,22 +48,10 @@ int main()
             }
         }
 
-    // 输出计算的碰撞表
-    // for (int i= 0; i < n; i++) {
-    //     for (int k = 0; k < n; k++) {
-    //         if (dist[i][k] < MAX_DIST) {
-    //             printf("%8d", dist[i][k]);
-    //         } else {
-    //             printf("%8d", 0);
-    //         }
-    //     }
-    //     std::cout << std::endl;
-    // }
-
     bool found = false;
     unsigned int min = MAX_DIST;
     unsigned int min_i, min_k;
-    do {
+    while (1) {
         // 查找最小碰撞牛i和牛k
         min = MAX_DIST;
         found = false;
@@ -76,16 +64,26 @@ int main()
                     min_k = k;
                 }
             }
-        // 如果找到碰撞的牛i和牛k
-        if (found) {
-            eat[min_i] = min;
-            dist[min_i][min_k] = MAX_DIST;
-            //注意，还有一种等于的情况(同时碰撞)
-            for (int i = 0; i < n; i++) {
-                if(dist[i][min_i]!=min) dist[i][min_i] = MAX_DIST;
+        // 如果未找到碰撞的牛i和牛k，则退出循环
+        if (!found)  break;
+
+        // 将牛i的吃草值设置为碰撞时的值
+        eat[min_i] = min;
+        dist[min_i][min_k] = MAX_DIST;
+
+        for (int i = 0; i < n; i++) {
+            // 将原来被牛i碰撞其他牛的设置为不碰撞
+            dist[min_i][i] = MAX_DIST;
+            // 与牛i碰撞的牛需要重新计算是否还会碰撞
+            if(dist[i][min_i]==MAX_DIST) continue;
+            if(d[min_i]=='E') {
+                if(x[min_k]-x[min_i]>x[i]-x[min_i]) continue;
             }
+            else if(y[min_k]-y[min_i]>y[i]-y[min_i]) continue;
+            dist[i][min_i] = MAX_DIST;
         }
-    } while (found);
+
+    }
 
     for(int i = 0; i < n; i++) {
         if (eat[i] == MAX_DIST) {
